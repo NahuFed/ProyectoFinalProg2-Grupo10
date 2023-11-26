@@ -1,0 +1,21 @@
+.card img{
+    height: 30rem;
+    object-fit: cover;
+}
+
+select{
+    width: 10rem;
+}
+label{
+    width: 5rem;
+    padding-bottom: 1em;
+}
+
+textarea{
+    width: 100%;
+    resize: none;
+}
+input{
+    width: 10rem;
+    height: 2rem;
+}

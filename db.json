@@ -1,0 +1,198 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "Usuario": "admin",
+      "Password": "admin123",
+      "Email": "admin@gmail.com"
+    },
+    {
+      "id": 2,
+      "Usuario": "empleado",
+      "Password": "empleado456",
+      "Email": "empleado@gmail.com"
+    },
+    {
+      "id": 3,
+      "Usuario": "cliente1",
+      "Password": "cliente123",
+      "Email": "cliente1@gmail.com"
+    },
+    {
+      "id": 4,
+      "Usuario": "cliente2",
+      "Password": "cliente456",
+      "Email": "cliente2@gmail.com"
+    },
+    {
+      "id": 5,
+      "Usuario": "cliente3",
+      "Password": "cliente789",
+      "Email": "cliente3@gmail.com"
+    }
+  ],
+  "clientes": [
+    {
+      "id": 1,
+      "Nombre": "Diego Caceres",
+      "Edad": 30,
+      "Email": "diego@gmail.com",
+      "Telefono": "381-123456"
+    },
+    {
+      "id": 2,
+      "Nombre": "Maria Martinez",
+      "Edad": 25,
+      "Email": "maria@gmail.com",
+      "Telefono": "381-654321"
+    },
+    {
+      "id": 3,
+      "Nombre": "Lucio Pagganni",
+      "Edad": 40,
+      "Email": "lucio@gmail.com",
+      "Telefono": "381-987654"
+    },
+    {
+      "id": 4,
+      "Nombre": "Laura Rodriguez",
+      "Edad": 28,
+      "Email": "laura@gmail.com",
+      "Telefono": "381-111222"
+    },
+    {
+      "id": 5,
+      "Nombre": "Carlos Sanchez",
+      "Edad": 35,
+      "Email": "carlos@gmail.com",
+      "Telefono": "381-333444"
+    }
+  ],
+  "peliculas": [
+    {
+      "id": 1,
+      "Nombre": "Troya",
+      "Descripcion": "Película épica basada en la Guerra de Troya.",
+      "Precio": "$50",
+      "Actores": "Brad Pitt, Eric Bana, Orlando Bloom, Diane Kruger, Brian Cox",
+      "Director De Pelicula": "Wolfgang Petersen",
+      "Fecha De Estreno": "13 de mayo de 2004",
+      "url_imagen": "https://pics.filmaffinity.com/Troya-509263865-large.jpg"
+    },
+    {
+      "id": 2,
+      "Nombre": "Guerra mundial Z",
+      "Descripcion": "Película de ciencia ficción sobre una pandemia global de zombis.",
+      "Precio": "$99,99",
+      "Actores": "Brad Pitt, Mireille Enos, Fana Mokoena, Daniella Kertesz, James Badge Dale",
+      "Director De Pelicula": "Marc Forster",
+      "Fecha De Estreno": "21 de junio de 2013",
+      "url_imagen": "https://m.media-amazon.com/images/S/pv-target-images/5fc6c9c2c4cc9a0ba97a5414d9f804f5dac4c2aba0fd97b8d681ba69a5e22b14.jpg"
+    },
+    {
+      "id": 3,
+      "Nombre": "Rescatando al soldado Ryan",
+      "Descripcion": "Drama bélico ambientado en la Segunda Guerra Mundial.",
+      "Precio": "$69,99",
+      "Actores": "Tom Hanks, Tom Sizemore, Edward Burns, Matt Damon, Jeremy Davies",
+      "Director De Pelicula": "Steven Spielberg",
+      "Fecha De Estreno": "24 de julio de 1998",
+      "url_imagen": "https://pics.filmaffinity.com/Salvar_al_soldado_Ryan-442865234-large.jpg"
+    },
+    {
+      "id": 4,
+      "Nombre": "Interestelar",
+      "Descripcion": "Película de ciencia ficción que explora viajes interestelares y agujeros de gusano.",
+      "Precio": "$55,50",
+      "Actores": "Matthew McConaughey, Anne Hathaway, Jessica Chastain, Michael Caine",
+      "Director De Pelicula": "Christopher Nolan",
+      "Fecha De Estreno": "7 de noviembre de 2014",
+      "url_imagen": "https://m.media-amazon.com/images/I/A1JVqNMI7UL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": 5,
+      "Nombre": "La La Land",
+      "Descripcion": "Musical romántico ambientado en Los Ángeles.",
+      "Precio": "$45,99",
+      "Actores": "Ryan Gosling, Emma Stone, John Legend, Rosemarie DeWitt",
+      "Director De Pelicula": "Damien Chazelle",
+      "Fecha De Estreno": "9 de diciembre de 2016",
+      "url_imagen": "https://pics.filmaffinity.com/la_la_land-262021831-mmed.jpg"
+    },
+    {
+      "id": 6,
+      "Nombre": "El Gran Gatsby",
+      "Descripcion": "Drama romántico basado en la novela de F. Scott Fitzgerald.",
+      "Precio": "$60,00",
+      "Actores": "Leonardo DiCaprio, Tobey Maguire, Carey Mulligan, Joel Edgerton",
+      "Director De Pelicula": "Baz Luhrmann",
+      "Fecha De Estreno": "10 de mayo de 2013",
+      "url_imagen": "https://pics.filmaffinity.com/El_gran_Gatsby-976110456-large.jpg"
+    }
+  ],
+  "alquileres": [
+    {
+      "id": 1,
+      "ClienteId": 1,
+      "PeliculaId": 1,
+      "FechaAlquilado": "2023-01-01",
+      "FechaDevolucionEsperada": "2023-01-08",
+      "Estado": "En curso",
+      "Comentarios": "Cliente regular, sin observaciones"
+    },
+    {
+      "id": 2,
+      "ClienteId": 2,
+      "PeliculaId": 2,
+      "FechaAlquilado": "2023-02-02",
+      "FechaDevolucionEsperada": "2023-02-09",
+      "Estado": "En curso",
+      "Comentarios": "Nuevo cliente, verificar dirección"
+    },
+    {
+      "id": 3,
+      "ClienteId": 3,
+      "PeliculaId": 3,
+      "FechaAlquilado": "2023-06-12",
+      "FechaDevolucionEsperada": "2023-06-19",
+      "Estado": "En curso",
+      "Comentarios": "Cliente habitual, buen historial"
+    },
+    {
+      "id": 4,
+      "ClienteId": 4,
+      "PeliculaId": 4,
+      "FechaAlquilado": "2023-03-15",
+      "FechaDevolucionEsperada": "2023-03-22",
+      "Estado": "En curso",
+      "Comentarios": "Cliente nuevo, solicitar identificación"
+    },
+    {
+      "id": 5,
+      "ClienteId": 5,
+      "PeliculaId": 5,
+      "FechaAlquilado": "2023-09-20",
+      "FechaDevolucionEsperada": "2023-09-27",
+      "Estado": "En curso",
+      "Comentarios": "Cliente preferencial, aplicar descuento"
+    },
+    {
+      "ClienteId": 1,
+      "PeliculaId": 1,
+      "FechaAlquilado": "2023-01-01",
+      "FechaDevolucionEsperada": "2023-01-08",
+      "Estado": "En curso",
+      "Comentarios": "Cliente regular, sin observaciones",
+      "id": 6
+    },
+    {
+      "ClienteId": "3",
+      "PeliculaId": "2",
+      "FechaAlquilado": "2023-11-02",
+      "FechaDevolucionEsperada": "2023-11-16",
+      "Estado": "sin retorno",
+      "Comentarios": "asdasd",
+      "id": 7
+    }
+  ]
+}

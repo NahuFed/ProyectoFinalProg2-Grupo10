@@ -1,0 +1,60 @@
+/* Importar las Bootstrap Icons desde un archivo externo */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/* Estilo para los enlaces dentro de un elemento <footer> */
+footer a {
+    text-decoration: none; /* Quitar la decoración de texto subrayado */
+    color: rgb(27, 27, 27); /* Establecer el color del texto a un tono de gris */
+}
+
+/* Estilo para elementos con la clase .tarjeta */
+.tarjeta {
+    position: relative; /* Posición relativa para posicionar en relación con su flujo normal */
+    overflow: hidden; /* Ocultar contenido que se desborde */
+    border-radius: 16px; /* Borde redondeado */
+}
+
+/* Estilo para elementos con la clase .tarjeta-img-top */
+.tarjeta-img-top {
+    border-radius: 0; /* Quitar el borde redondeado */
+    height: 20rem; /* Establecer la altura de la imagen a 20 rem */
+    object-fit: cover; /* Escalar y recortar la imagen para ajustarla al contenedor */
+}
+
+/* Estilo para elementos con la clase .tarjeta-body */
+.tarjeta-body {
+    position: absolute; /* Posición absoluta para superponer contenido */
+    height: 100%; /* Establecer la altura al 100% del contenedor */
+    width: 100%; /* Establecer el ancho al 100% del contenedor */
+    bottom: -600px; /* Inicialmente, mover el contenido hacia abajo 600px fuera de la vista */
+    background: linear-gradient(#fffefeb4, #ca873471); /* Fondo con un degradado lineal */
+    backdrop-filter: blur(1px); /* Aplicar un filtro de desenfoque al fondo */
+    transition: ease-in-out 1s; /* Animación de transición suave */
+    color: #0a0a0ae1; /* Establecer el color del texto */
+}
+
+/* Cuando el mouse se posa sobre un elemento con la clase .card, mueve .card-body hacia arriba */
+.card:hover .card-body {
+    bottom: 0; /* Mover .tarjeta-body a la posición normal */
+    transition: all 0.8s; /* Animación de transición más rápida */
+}
+
+/* Establecer el color de texto para elementos con la clase .iconColor */
+.iconColor {
+    color: #111111be;
+}
+
+/* Estilo para elementos con la clase .circle */
+.circle {
+    background-color: #ffffff8e; /* Color de fondo */
+    padding: 10px 10px 9px 10px; /* Relleno */
+    border-radius: 50%; /* Hacer el elemento circular */
+    width: 100px; /* Ancho */
+    height: 100px; /* Altura */
+}
+
+/* Cuando el mouse se posa sobre un elemento con la clase .circle, cambia el color de fondo y agrega una sombra */
+.circle:hover {
+    background-color: #c58940; /* Nuevo color de fondo */
+    box-shadow: 0px 0px 10px #c58940; /* Sombra alrededor del elemento */
+}

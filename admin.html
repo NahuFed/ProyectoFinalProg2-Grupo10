@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="admin.js" defer></script>
+    <title>VideoClub</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">VideoClub</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html"
+                  >Acerca de nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./admin.html">Admin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="text-center">Admin</h1>
+      <div class="container py-5">
+        <form id="formularioCrud" class="d-flex justify-content-center">
+          <div class="d-flex flex-column w-50 border shadow p-5">
+            <legend>Alquiler</legend>
+            <label for="selectCliente">Cliente</label>
+            <select id="selectCliente">
+              <option selected></option>
+            </select>
+<hr>
+            <label for="selectPelicula">Pelicula</label>
+            <select name="pelicula" id="selectPelicula">
+              <option selected></option>
+            </select>
+            <hr>
+            <div class="d-flex justify-content-between">
+                <label for="fechaAlquiler" >Fecha Alquiler</label>
+                <input
+                  type="date"
+                  name="Fecha Alquiler"
+                  placeholder="Ingrese la Fecha Alquiler"
+                  id="fechaAlquiler"
+                />
+            </div>
+<hr>
+            <div class="d-flex justify-content-between">
+                <label for="fechaDevolucion" >Fecha Devolucion</label>
+                <input
+                  type="date"
+                  name="Devolucion"
+                  placeholder="Ingrese la Fecha Devolucion"
+                  id="fechaDevolucion"
+                />
+            </div>
+<hr>
+            <label for="estado">Estado</label>
+            <input
+              type="text"
+              name="estado"
+              placeholder="Ingrese el estado"
+              id="estado"
+            />
+<hr>
+            <label for="comentario">Comentario</label>
+
+            <textarea
+              rows="3"
+              name="comentario"
+              placeholder="Ingrese un comentario"
+              id="comentario"
+            ></textarea>
+
+            <button type="button" id="agregar" class="btn btn-success my-3">Agregar</button>
+          </div>
+        </form>
+        <h2>Alquileres</h2>
+        <table
+          class="table table-bordered table-responsive table-striped "
+        >
+          <thead>
+            <tr>
+              <th>Id Alquiler</th>
+              <th>Id Cliente</th>
+              <th>Id Pelicula</th>
+              <th>Fecha de alquiler</th>
+              <th>Fecha de devolucion esperada</th>
+              <th>Estado</th>
+              <th>Comentarios</th>
+            </tr>
+          </thead>
+          <tbody id="tablaAlquileres">
+
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</html>
