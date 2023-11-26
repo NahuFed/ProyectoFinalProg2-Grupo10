@@ -7,7 +7,7 @@ let formularioCrud = document.getElementById("formularioCrud")
 let estado = document.getElementById("estado")
 let comentario = document.getElementById("comentario")
 let botonAgregar = document.getElementById("agregar")
-
+let contenedorBotones = document.getElementById("botones")
 
 const getClientes = () => {
   axios
@@ -22,10 +22,45 @@ const getClientes = () => {
     .catch((e) => console.log(e));
 };
 
-const getAlquiler = (id) => {
+const editarAlquiler=(id) =>{
+    axios.put("http://localhost:3001/alquileres/" + id,
+    {
+    "ClienteId": selectCliente.value,
+      "PeliculaId": selectPelicula.value,
+      "FechaAlquilado": fechaAlquiler.value,
+      "FechaDevolucionEsperada": fechaDevolucion.value,
+      "Estado": estado.value,
+      "Comentarios": comentario.value
+    }
+    )
+    .then(res =>{
+        selectCliente.value = ''
+        selectPelicula.value = ''
+        fechaAlquiler.value = ''
+        fechaDevolucion.value = ''
+        estado.value = ''
+        comentario.value =''
+        getPeliculas()
+    }
+        )
+    .catch(e=>console.log(e))
+}
+
+const prepararEditarAlquiler = (id) => {
   axios
     .get("http://localhost:3001/alquileres/" + id)
-    .then((res) => res.data)
+    .then((res) => {
+        console.log(res.data)
+        botonAgregar.style = "display: none"        
+        contenedorBotones.innerHTML = `
+        <button class ='btn btn-warning w-100 mt-3' onclick='editarAlquiler(${id})'>Aceptar</button>`;        
+        selectCliente.value = res.data.ClienteId
+        selectPelicula.value = res.data.PeliculaId
+        fechaAlquiler.value = res.data.FechaAlquilado
+        fechaDevolucion.value = res.data.FechaDevolucionEsperada
+        estado.value = res.data.Estado
+        comentario.value =res.data.Comentarios
+    })
     .catch((e) => console.log(e));
 };
 
@@ -63,7 +98,7 @@ const getAlquileres = () => {
             <td>${alquiler.FechaDevolucionEsperada}</td>
             <td>${alquiler.Estado}</td>
             <td>${alquiler.Comentarios}</td>
-            <td class='d-flex'> <button class="btn btn-warning me-2" onclick="editarAlquiler(${alquiler.id})">Editar</button><button class="btn btn-danger" onclick="borrarAlquiler((${alquiler.id}))">Borrar</button></td>
+            <td class='d-flex'> <a href='#formularioCrud'><button class="btn btn-warning me-2" onclick="prepararEditarAlquiler(${alquiler.id})">Editar</button></a><button class="btn btn-danger" onclick="borrarAlquiler((${alquiler.id}))">Borrar</button></td>
         </tr>
             `;
       });

@@ -132,13 +132,13 @@
   ],
   "alquileres": [
     {
-      "id": 1,
-      "ClienteId": 1,
-      "PeliculaId": 1,
+      "ClienteId": "1",
+      "PeliculaId": "1",
       "FechaAlquilado": "2023-01-01",
       "FechaDevolucionEsperada": "2023-01-08",
       "Estado": "En curso",
-      "Comentarios": "Cliente regular, sin observaciones"
+      "Comentarios": "Cliente regular, sin observaciones",
+      "id": 1
     },
     {
       "id": 2,
@@ -186,12 +186,12 @@
       "id": 6
     },
     {
-      "ClienteId": "3",
+      "ClienteId": "5",
       "PeliculaId": "2",
-      "FechaAlquilado": "2023-11-02",
-      "FechaDevolucionEsperada": "2023-11-16",
-      "Estado": "sin retorno",
-      "Comentarios": "asdasd",
+      "FechaAlquilado": "2023-10-31",
+      "FechaDevolucionEsperada": "2023-11-05",
+      "Estado": "En curso",
+      "Comentarios": "Cliente regular, buena samaritano, merece el cielo",
       "id": 7
     }
   ]
