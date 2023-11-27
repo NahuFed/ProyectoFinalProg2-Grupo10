@@ -22,6 +22,19 @@ const getClientes = () => {
     .catch((e) => console.log(e));
 };
 
+const getPeliculas = () => {
+    axios
+      .get("http://localhost:3001/peliculas")
+      .then((res) => {
+        res.data.forEach((pelicula) => {
+          selectPelicula.innerHTML += `
+              <option value = '${pelicula.id}'>${pelicula.Nombre}</option>
+              `;
+        });
+      })
+      .catch((e) => console.log(e));
+  };
+
 const editarAlquiler=(id) =>{
     axios.put("http://localhost:3001/alquileres/" + id,
     {
@@ -40,7 +53,7 @@ const editarAlquiler=(id) =>{
         fechaDevolucion.value = ''
         estado.value = ''
         comentario.value =''
-        getPeliculas()
+        getAlquileres()
     }
         )
     .catch(e=>console.log(e))
@@ -60,19 +73,6 @@ const prepararEditarAlquiler = (id) => {
         fechaDevolucion.value = res.data.FechaDevolucionEsperada
         estado.value = res.data.Estado
         comentario.value =res.data.Comentarios
-    })
-    .catch((e) => console.log(e));
-};
-
-const getPeliculas = () => {
-  axios
-    .get("http://localhost:3001/peliculas")
-    .then((res) => {
-      res.data.forEach((pelicula) => {
-        selectPelicula.innerHTML += `
-            <option value = '${pelicula.id}'>${pelicula.Nombre}</option>
-            `;
-      });
     })
     .catch((e) => console.log(e));
 };
