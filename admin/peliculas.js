@@ -29,12 +29,12 @@ const getPeliculas = () => {
                 <tr>
                 <td>${pelicula.id}</td>
                 <td>${pelicula.Nombre}</td>
-                <td>${pelicula.Descripcion}</td>
+                <td><span class='d-inline-block text-truncate' style="max-width: 150px;">${pelicula.Descripcion}</span></td>
                 <td>${pelicula.Precio}</td>
                 <td>${pelicula.Actores}</td>
                 <td>${pelicula.DirectorPelicula}</td>
                 <td>${pelicula.FechaEstreno}</td>
-                <td>${pelicula.url_imagen}</td>
+                <td ><span class='d-inline-block text-truncate' style="max-width: 150px;">${pelicula.url_imagen}</span></td>
                 <td class='d-flex'> <a href='#formularioCrud'><button class="btn btn-warning me-2" onclick="prepararEditarPelicula(${pelicula.id})">Editar</button></a><button class="btn btn-danger" onclick="borrarPelicula((${pelicula.id}))">Borrar</button></td>
             </tr>
                 `;

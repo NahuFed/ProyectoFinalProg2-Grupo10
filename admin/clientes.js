@@ -19,6 +19,7 @@ const getClientes = () => {
             res.data.forEach((cliente) => {
                 listaClientes.innerHTML += `
                 <tr>
+                    <td>${cliente.id}</td>
                     <td>${cliente.Nombre}</td>
                     <td>${cliente.Email}</td>
                     <td>${cliente.Telefono}</td>
