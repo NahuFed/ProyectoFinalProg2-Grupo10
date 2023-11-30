@@ -1,4 +1,28 @@
 {
+"Integrantes":[
+  {
+    "Legajo": 58808,
+    "Nombre": "Rodriguez Nahuel Federico",
+    "Linkedin": "https://www.linkedin.com/in/rodrigueznahuelfederico/",
+    "Github": "https://github.com/NahuFed",
+    "Foto":"./img/Nahuel.jpg"
+  },
+  {
+    "Legajo": 58942,
+    "Nombre": "Sánchez Ortiz Hernán",
+    "Linkedin": "https://www.linkedin.com/in/hernan-sanchez-ortiz/",
+    "Github": "https://github.com/hernansanchez95",
+    "Foto":"./img/Hernan.jpeg"
+  },
+  {
+    "Legajo": 54890,
+    "Nombre": "Cáceres Diego",
+    "Linkedin": "#",
+    "Github": "#",
+    "Foto":"./img/Diego.jpg"
+  }
+],
+
   "usuarios": [
     {
       "id": 1,
@@ -166,13 +190,13 @@
       "Comentarios": "Nuevo cliente, verificar dirección"
     },
     {
-      "id": 3,
-      "ClienteId": 3,
-      "PeliculaId": 3,
+      "ClienteId": "3",
+      "PeliculaId": "3",
       "FechaAlquilado": "2023-06-12",
       "FechaDevolucionEsperada": "2023-06-19",
       "Estado": "En curso",
-      "Comentarios": "Cliente habitual, buen historial"
+      "Comentarios": "Cliente habitual, buen historial",
+      "id": 3
     },
     {
       "id": 4,

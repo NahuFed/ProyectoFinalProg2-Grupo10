@@ -27,7 +27,7 @@ footer a {
     height: 100%; /* Establecer la altura al 100% del contenedor */
     width: 100%; /* Establecer el ancho al 100% del contenedor */
     bottom: -600px; /* Inicialmente, mover el contenido hacia abajo 600px fuera de la vista */
-    background: linear-gradient(#fffefeb4, #ca873471); /* Fondo con un degradado lineal */
+    background: linear-gradient(#fffefeb4, #1b252f); /* Fondo con un degradado lineal */
     backdrop-filter: blur(1px); /* Aplicar un filtro de desenfoque al fondo */
     transition: ease-in-out 1s; /* Animación de transición suave */
     color: #0a0a0ae1; /* Establecer el color del texto */
@@ -55,6 +55,6 @@ footer a {
 
 /* Cuando el mouse se posa sobre un elemento con la clase .circle, cambia el color de fondo y agrega una sombra */
 .circle:hover {
-    background-color: #c58940; /* Nuevo color de fondo */
-    box-shadow: 0px 0px 10px #c58940; /* Sombra alrededor del elemento */
+    background-color: #1a98ff; /* Nuevo color de fondo */
+    box-shadow: 0px 0px 10px #1a98ff; /* Sombra alrededor del elemento */
 }

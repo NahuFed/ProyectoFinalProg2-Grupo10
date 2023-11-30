@@ -1,6 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=PT+Sans&family=Poppins&display=swap');
+
+*{
+font-family: 'Borel', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Sans', sans-serif;
+}
+
+
+
+body{
+    background-color: #0d171d;
+    color: aliceblue;
+}
+
 .card img{
     height: 30rem;
-    object-fit: cover;
+    object-fit: cover;  
+}
+
+
+.imagenCarrusel{
+    height: 30rem;
+    object-fit: cover;  
+    filter: brightness(.8); 
 }
 
 select{
@@ -19,3 +41,17 @@ input{
     width: 10rem;
     height: 2rem;
 }
+
+.barraNavegacion{
+    background-color: #1b252f;
+   
+}
+
+.barraNavegacion a{
+    color: rgb(219, 218, 218);
+}
+
+.barraNavegacion .activo{
+    color: rgb(255, 255, 255);
+}
+

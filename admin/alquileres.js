@@ -6,8 +6,17 @@ let fechaDevolucion = document.getElementById("fechaDevolucion")
 let formularioCrud = document.getElementById("formularioCrud")
 let estado = document.getElementById("estado")
 let comentario = document.getElementById("comentario")
-let botonAgregar = document.getElementById("agregar")
+let botonAgregar = document.getElementById("btnAgregar")
 let contenedorBotones = document.getElementById("botones")
+
+const limpiarFormulario = () => {
+  selectCliente.value = ''
+  selectPelicula.value = ''
+  fechaAlquiler.value = ''
+  fechaDevolucion.value = ''
+  estado.value = ''
+  comentario.value =''
+}
 
 const getClientes = () => {
   axios
@@ -47,12 +56,7 @@ const editarAlquiler=(id) =>{
     }
     )
     .then(res =>{
-        selectCliente.value = ''
-        selectPelicula.value = ''
-        fechaAlquiler.value = ''
-        fechaDevolucion.value = ''
-        estado.value = ''
-        comentario.value =''
+        limpiarFormulario()
         getAlquileres()
     }
         )
@@ -83,12 +87,17 @@ const borrarAlquiler = (id) =>{
     .catch(e=>console.log(e))
 }
 
+
+
 const getAlquileres = () => {
+
+ 
+
   axios
     .get("http://localhost:3001/alquileres")
     .then((res) => {
       res.data.forEach((alquiler) => {
-        // console.log(pelicula.Nombre)
+
         tablaAlquileres.innerHTML += `
             <tr>
             <td>${alquiler.id}</td>

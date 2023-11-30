@@ -1,3 +1,8 @@
+main{
+  background-color: #d7e2ec;
+  color: black;
+}
+
 .contenedor-admin{
     box-sizing: border-box;
     border-top: 2px solid #1a98ff;
@@ -60,6 +65,3 @@ a{
     
 }
 
-body-admin{
-    
-}
