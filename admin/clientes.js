@@ -36,9 +36,11 @@ const getClientes = () => {
 
 
 const eliminarCliente = (id) => {
-    axios.delete("http://localhost:3001/clientes/" + id)
-      .then(res => console.log(res))
-      .catch(e => console.log(e))
+    if( confirm(`Está seguro que quiere eliminar el cliente`)){
+        axios.delete("http://localhost:3001/clientes/" + id)
+          .then(res => alert("se elimino el cliente"))
+          .catch(e => console.log(e))
+    }
   }
 
 

@@ -7,12 +7,12 @@ const login = (e) => {
   axios.get("http://localhost:3001/usuarios")
     .then(resp=>
         {
-            let email = document.getElementById("email").value
+            let cuenta = document.getElementById("cuenta").value
             let password = document.getElementById("password").value
-            console.log(resp.data)
-            if (resp.data.find((usuario)=>usuario.Email === email && usuario.Password === password && usuario.Usuario === 'admin')){               
+            
+            if (resp.data.find((usuario)=>(usuario.Email === cuenta||usuario.Usuario === cuenta )&& usuario.Password === password  && usuario.Usuario === 'admin')){               
                 location.href="home.html"
-              }else if (resp.data.find((usuario) =>usuario.Email === email && usuario.Password === password)){
+              }else if (resp.data.find((usuario) =>(usuario.Email === cuenta || usuario.Usuario === cuenta) && usuario.Password === password)){
                 alert("Usuario no autorizado")
               }else
               alert("email o password incorrectos")        

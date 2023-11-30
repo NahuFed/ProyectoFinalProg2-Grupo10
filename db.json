@@ -1,28 +1,30 @@
 {
-"Integrantes":[
-  {
-    "Legajo": 58808,
-    "Nombre": "Rodriguez Nahuel Federico",
-    "Linkedin": "https://www.linkedin.com/in/rodrigueznahuelfederico/",
-    "Github": "https://github.com/NahuFed",
-    "Foto":"./img/Nahuel.jpg"
-  },
-  {
-    "Legajo": 58942,
-    "Nombre": "Sánchez Ortiz Hernán",
-    "Linkedin": "https://www.linkedin.com/in/hernan-sanchez-ortiz/",
-    "Github": "https://github.com/hernansanchez95",
-    "Foto":"./img/Hernan.jpeg"
-  },
-  {
-    "Legajo": 54890,
-    "Nombre": "Cáceres Diego",
-    "Linkedin": "#",
-    "Github": "#",
-    "Foto":"./img/Diego.jpg"
-  }
-],
-
+  "Integrantes": [
+    {
+      "id": 1,
+      "Legajo": 58808,
+      "Nombre": "Rodriguez Nahuel Federico",
+      "Linkedin": "https://www.linkedin.com/in/rodrigueznahuelfederico/",
+      "Github": "https://github.com/NahuFed",
+      "Foto": "./img/Nahuel.jpg"
+    },
+    {
+      "id": 2,
+      "Legajo": 58942,
+      "Nombre": "Sánchez Ortiz Hernán",
+      "Linkedin": "https://www.linkedin.com/in/hernan-sanchez-ortiz/",
+      "Github": "https://github.com/hernansanchez95",
+      "Foto": "./img/Hernan.jpeg"
+    },
+    {
+      "id": 3,
+      "Legajo": 54890,
+      "Nombre": "Cáceres Diego",
+      "Linkedin": "#",
+      "Github": "#",
+      "Foto": "./img/Diego.jpg"
+    }
+  ],
   "usuarios": [
     {
       "id": 1,
@@ -100,14 +102,14 @@
   ],
   "peliculas": [
     {
-      "id": 1,
       "Nombre": "Troya",
       "Descripcion": "Película épica basada en la Guerra de Troya.",
       "Precio": "$50",
       "Actores": "Brad Pitt, Eric Bana, Orlando Bloom, Diane Kruger, Brian Cox",
       "DirectorPelicula": "Wolfgang Petersen",
       "FechaEstreno": "2004-05-13",
-      "url_imagen": "https://pics.filmaffinity.com/Troya-509263865-large.jpg"
+      "url_imagen": "https://pics.filmaffinity.com/Troya-509263865-large.jpg",
+      "id": 1
     },
     {
       "id": 2,

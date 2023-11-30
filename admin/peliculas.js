@@ -83,9 +83,11 @@ const prepararEditarPelicula = (id) => {
 };
 
 const borrarPelicula = (id) =>{    
-    axios.delete("http://localhost:3001/peliculas/"+id)
-    .then(res=>console.log(res))
-    .catch(e=>console.log(e))
+   if (confirm(`Está seguro que quiere borrar la pelicula?`)){
+       axios.delete("http://localhost:3001/peliculas/"+id)
+       .then(res=>alert("pelicula borrada correctamente"))
+       .catch(e=>console.log(e))
+    } 
 }
 
 const agregarPelicula = (e) =>{

@@ -70,7 +70,8 @@ const prepararEditarAlquiler = (id) => {
         console.log(res.data)
         botonAgregar.style = "display: none"        
         contenedorBotones.innerHTML = `
-        <button class ='btn btn-warning w-100 mt-3' onclick='editarAlquiler(${id})'>Aceptar</button>`;        
+        <button class ='btn btn-warning w-100 mt-3' onclick='editarAlquiler(${id})'>Aceptar</button>`;
+        
         selectCliente.value = res.data.ClienteId
         selectPelicula.value = res.data.PeliculaId
         fechaAlquiler.value = res.data.FechaAlquilado
@@ -81,10 +82,12 @@ const prepararEditarAlquiler = (id) => {
     .catch((e) => console.log(e));
 };
 
-const borrarAlquiler = (id) =>{    
+const borrarAlquiler = (id) =>{   
+  if(confirm("Está seguro que quiere eliminar el alquiler?")){    
     axios.delete("http://localhost:3001/Alquileres/"+id)
-    .then(res=>console.log(res))
+    .then(res=>alert("Alquiler borrado correctamente"))
     .catch(e=>console.log(e))
+  } 
 }
 
 
@@ -96,8 +99,7 @@ const getAlquileres = () => {
   axios
     .get("http://localhost:3001/alquileres")
     .then((res) => {
-      res.data.forEach((alquiler) => {
-
+      res.data.forEach((alquiler) => {     
         tablaAlquileres.innerHTML += `
             <tr>
             <td>${alquiler.id}</td>
