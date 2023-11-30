@@ -9,9 +9,9 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./admin.css" />
-    <script src="alquileres.js" defer></script>
+    <script src="peliculas.js" defer></script>
     <script
       src="https://kit.fontawesome.com/170be67319.js"
       crossorigin="anonymous"
@@ -23,7 +23,7 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">VideoClub</a>
+          <a class="navbar-brand" href="#">VideoClub</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -41,17 +41,17 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="../index.html"
+                  href="./index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../nosotros.html"
+                <a class="nav-link" href="./nosotros.html"
                   >Acerca de nosotros</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./admin/alquileres.html">Admin</a>
+                <a class="nav-link" href="./admin.html">Admin</a>
               </li>
             </ul>
           </div>
@@ -86,56 +86,67 @@
           </div>
         </div>
         <div class="col-10">
-          <div class="container py-5">
+          <div class="p-5">
             <form id="formularioCrud" class="d-flex justify-content-center">
               <div class="d-flex flex-column w-50 border shadow p-5">
-                <legend>Alquiler</legend>
-                <label for="selectCliente">Cliente</label>
-                <select id="selectCliente">
-                  <option selected></option>
-                </select>
-                <hr />
-                <label for="selectPelicula">Pelicula</label>
-                <select name="pelicula" id="selectPelicula">
-                  <option selected></option>
-                </select>
-                <hr />
-                <div class="d-flex justify-content-between">
-                  <label for="fechaAlquiler">Fecha Alquiler</label>
-                  <input
-                    type="date"
-                    name="Fecha Alquiler"
-                    placeholder="Ingrese la Fecha Alquiler"
-                    id="fechaAlquiler"
-                  />
-                </div>
-                <hr />
-                <div class="d-flex justify-content-between">
-                  <label for="fechaDevolucion">Fecha Devolucion</label>
-                  <input
-                    type="date"
-                    name="Devolucion"
-                    placeholder="Ingrese la Fecha Devolucion"
-                    id="fechaDevolucion"
-                  />
-                </div>
-                <hr />
-                <label for="estado">Estado</label>
+                <legend>Peliculas</legend>
+                <label for="nombre">Nombre</label>
                 <input
                   type="text"
-                  name="estado"
-                  placeholder="Ingrese el estado"
-                  id="estado"
+                  name="Nombre de pelicula"
+                  placeholder="Ingrese el nombre de la película."
+                  id="nombre"
                 />
                 <hr />
-                <label for="comentario">Comentario</label>
-
-                <textarea
-                  rows="3"
-                  name="comentario"
-                  placeholder="Ingrese un comentario"
-                  id="comentario"
-                ></textarea>
+                <label for="descripcion">Descripcion</label>
+                <input
+                  type="text"
+                  name="Descripcion de pelicula"
+                  placeholder="Ingrese una descripcion para la película."
+                  id="descripcion"
+                />
+                <hr />
+                <label for="descripcion">Precio</label>
+                <input
+                  type="text"
+                  name="Precio de pelicula"
+                  placeholder="Ingrese el precio de la película."
+                  id="precio"
+                />
+                <hr />
+                <label for="descripcion">Actores</label>
+                <input
+                  type="text"
+                  name="Actores de la pelicula"
+                  placeholder="Ingrese los actores de la película."
+                  id="actores"
+                />
+                <hr />
+                <label for="descripcion">Director</label>
+                <input
+                  type="text"
+                  name="Director de la pelicula"
+                  placeholder="Ingrese el director de la película."
+                  id="director"
+                />
+                <hr />
+                <div class="d-flex justify-content-between">
+                  <label for="fechaEstreno">Fecha de estreno</label>
+                  <input
+                    type="date"
+                    name="Estreno"
+                    placeholder="Ingrese la fecha de estreno"
+                    id="fechaEstreno"
+                  />
+                </div>
+                <hr />
+                <label for="estado">URL imagen</label>
+                <input
+                  type="text"
+                  name="URL de la imagen"
+                  placeholder="Ingrese el estado"
+                  id="urlImagen"
+                />
                 <button
                   type="button"
                   id="agregar"
@@ -146,20 +157,23 @@
                 <div id="botones"></div>
               </div>
             </form>
-            <h2>Alquileres</h2>
-            <table class="table table-bordered table-responsive table-striped">
+            <h2>Peliculas</h2>
+            <table
+              class="table table-bordered border table-responsive table-striped"
+            >
               <thead>
                 <tr>
-                  <th>Id Alquiler</th>
-                  <th>Id Cliente</th>
                   <th>Id Pelicula</th>
-                  <th>Fecha de alquiler</th>
-                  <th>Fecha de devolucion esperada</th>
-                  <th>Estado</th>
-                  <th>Comentarios</th>
+                  <th>Nombre de película</th>
+                  <th>Descripcion de la película</th>
+                  <th>Precio</th>
+                  <th>Actores</th>
+                  <th>Director</th>
+                  <th>Fecha de estreno</th>
+                  <th>URL de la imagen</th>
                 </tr>
               </thead>
-              <tbody id="tablaAlquileres"></tbody>
+              <tbody id="tablaPeliculas"></tbody>
             </table>
           </div>
         </div>

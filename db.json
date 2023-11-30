@@ -66,6 +66,12 @@
       "Edad": 35,
       "Email": "carlos@gmail.com",
       "Telefono": "381-333444"
+    },
+    {
+      "Nombre": "Nahuel",
+      "Email": "empleado@gmail.com",
+      "Telefono": "4277262",
+      "id": 6
     }
   ],
   "peliculas": [
