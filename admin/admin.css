@@ -1,0 +1,61 @@
+.contenedor-admin{
+    box-sizing: border-box;
+    border-top: 2px solid #1a98ff;
+     min-height: 100vh;
+}
+
+
+.sidebar{  
+    top: 0;
+    position:sticky;
+    overflow-y: auto;
+}
+
+.columnaSidebar{
+    background-color:#1a98ff;
+    min-height: 100%;  
+}
+
+.listaSidebar{
+ list-style-type: none;
+ height: auto;
+ padding: 0;
+ width: 100%;
+}
+.listaSidebar .fila {
+    width: 100%;
+    height: 3em;
+    list-style-type: none;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+  }
+
+  .listaSidebar .fila:hover,
+.fila:active {
+  cursor: pointer;
+  background-color: #4dafff;
+}
+
+.fila .icono {
+  flex: 30%;
+  display: grid;
+  place-items: center;
+}
+.fila .tituloSidebar {
+  flex: 70%;
+}
+
+.SidebarList .active {
+  background-color: #629bca;
+  border-left: solid 0.5em rgb(143, 173, 198);
+}
+
+a{
+    text-decoration: none;
+    
+}

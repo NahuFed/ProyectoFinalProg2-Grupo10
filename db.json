@@ -75,8 +75,8 @@
       "Descripcion": "Película épica basada en la Guerra de Troya.",
       "Precio": "$50",
       "Actores": "Brad Pitt, Eric Bana, Orlando Bloom, Diane Kruger, Brian Cox",
-      "Director De Pelicula": "Wolfgang Petersen",
-      "Fecha De Estreno": "13 de mayo de 2004",
+      "DirectorPelicula": "Wolfgang Petersen",
+      "FechaEstreno": "2004-05-13",
       "url_imagen": "https://pics.filmaffinity.com/Troya-509263865-large.jpg"
     },
     {
@@ -85,8 +85,8 @@
       "Descripcion": "Película de ciencia ficción sobre una pandemia global de zombis.",
       "Precio": "$99,99",
       "Actores": "Brad Pitt, Mireille Enos, Fana Mokoena, Daniella Kertesz, James Badge Dale",
-      "Director De Pelicula": "Marc Forster",
-      "Fecha De Estreno": "21 de junio de 2013",
+      "DirectorPelicula": "Marc Forster",
+      "FechaEstreno": "2013-07-21",
       "url_imagen": "https://m.media-amazon.com/images/S/pv-target-images/5fc6c9c2c4cc9a0ba97a5414d9f804f5dac4c2aba0fd97b8d681ba69a5e22b14.jpg"
     },
     {
@@ -95,19 +95,19 @@
       "Descripcion": "Drama bélico ambientado en la Segunda Guerra Mundial.",
       "Precio": "$69,99",
       "Actores": "Tom Hanks, Tom Sizemore, Edward Burns, Matt Damon, Jeremy Davies",
-      "Director De Pelicula": "Steven Spielberg",
-      "Fecha De Estreno": "24 de julio de 1998",
+      "DirectorPelicula": "Steven Spielberg",
+      "FechaEstreno": "1998-07-24",
       "url_imagen": "https://pics.filmaffinity.com/Salvar_al_soldado_Ryan-442865234-large.jpg"
     },
     {
-      "id": 4,
       "Nombre": "Interestelar",
       "Descripcion": "Película de ciencia ficción que explora viajes interestelares y agujeros de gusano.",
       "Precio": "$55,50",
       "Actores": "Matthew McConaughey, Anne Hathaway, Jessica Chastain, Michael Caine",
-      "Director De Pelicula": "Christopher Nolan",
-      "Fecha De Estreno": "7 de noviembre de 2014",
-      "url_imagen": "https://m.media-amazon.com/images/I/A1JVqNMI7UL._AC_UF1000,1000_QL80_.jpg"
+      "DirectorPelicula": "Christopher Nolan",
+      "FechaEstreno": "2014-11-07",
+      "url_imagen": "https://m.media-amazon.com/images/I/A1JVqNMI7UL.AC_UF1000,1000_QL80.jpg",
+      "id": 4
     },
     {
       "id": 5,
@@ -115,8 +115,8 @@
       "Descripcion": "Musical romántico ambientado en Los Ángeles.",
       "Precio": "$45,99",
       "Actores": "Ryan Gosling, Emma Stone, John Legend, Rosemarie DeWitt",
-      "Director De Pelicula": "Damien Chazelle",
-      "Fecha De Estreno": "9 de diciembre de 2016",
+      "DirectorPelicula": "Damien Chazelle",
+      "FechaEstreno": "2016-12-09",
       "url_imagen": "https://pics.filmaffinity.com/la_la_land-262021831-mmed.jpg"
     },
     {
@@ -125,9 +125,19 @@
       "Descripcion": "Drama romántico basado en la novela de F. Scott Fitzgerald.",
       "Precio": "$60,00",
       "Actores": "Leonardo DiCaprio, Tobey Maguire, Carey Mulligan, Joel Edgerton",
-      "Director De Pelicula": "Baz Luhrmann",
-      "Fecha De Estreno": "10 de mayo de 2013",
+      "DirectorPelicula": "Baz Luhrmann",
+      "FechaEstreno": "2013-05-10",
       "url_imagen": "https://pics.filmaffinity.com/El_gran_Gatsby-976110456-large.jpg"
+    },
+    {
+      "Nombre": "Vanilla Sky",
+      "Descripcion": "David Aames tiene todo para ser feliz: es guapo, rico y trabaja en una famosa empresa. Sin embargo, un accidente automovilístico le cambiará la vida.",
+      "Precio": "$54,00",
+      "Actores": "Tom Cruise, Penélope Cruz, Cameron Diaz",
+      "DirectorPelicula": "Cameron Crowe",
+      "FechaEstreno": "2002-01-24",
+      "url_imagen": "https://i.pinimg.com/originals/1a/36/30/1a3630850e97d0f45628346142fcd8d2.jpg",
+      "id": 7
     }
   ],
   "alquileres": [
