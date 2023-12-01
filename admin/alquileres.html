@@ -96,7 +96,7 @@
                 </select>
                 <hr />
                 <label for="selectPelicula">Pelicula</label>
-                <select name="pelicula" id="selectPelicula">
+                <select name="pelicula" id="selectPelicula" required>
                   <option selected></option>
                 </select>
                 <hr />
@@ -107,6 +107,7 @@
                     name="Fecha Alquiler"
                     placeholder="Ingrese la Fecha Alquiler"
                     id="fechaAlquiler"
+                    required
                   />
                 </div>
                 <hr />
@@ -117,6 +118,7 @@
                     name="Devolucion"
                     placeholder="Ingrese la Fecha Devolucion"
                     id="fechaDevolucion"
+                    required
                   />
                 </div>
                 <hr />
@@ -126,6 +128,7 @@
                   name="estado"
                   placeholder="Ingrese el estado"
                   id="estado"
+                  required
                 />
                 <hr />
                 <label for="comentario">Comentario</label>
@@ -135,11 +138,12 @@
                   name="comentario"
                   placeholder="Ingrese un comentario"
                   id="comentario"
+                  required
                 ></textarea>
                 <button
                   type="button"
                   id="btnAgregar"
-                  class="btn btn-success my-3 w-100"
+                  class="btn btn-success my-3 w-100"                  
                 >
                   Agregar
                 </button>

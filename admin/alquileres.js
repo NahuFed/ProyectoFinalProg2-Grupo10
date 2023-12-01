@@ -45,6 +45,11 @@ const getPeliculas = () => {
   };
 
 const editarAlquiler=(id) =>{
+ 
+  if(selectCliente.value === '' || selectPelicula.value === '' || fechaAlquiler.value === '' || fechaDevolucion.value === '' || estado.value === '' || comentario.value === ''){
+    alert("Debe completar los campos")    
+  }else{
+   
     axios.put("http://localhost:3001/alquileres/" + id,
     {
     "ClienteId": selectCliente.value,
@@ -55,12 +60,14 @@ const editarAlquiler=(id) =>{
       "Comentarios": comentario.value
     }
     )
-    .then(res =>{
+    .then(res =>{        
         limpiarFormulario()
         getAlquileres()
+        alert("El alquiler se editó correctamente")
     }
         )
     .catch(e=>console.log(e))
+  }
 }
 
 const prepararEditarAlquiler = (id) => {
@@ -70,7 +77,7 @@ const prepararEditarAlquiler = (id) => {
         console.log(res.data)
         botonAgregar.style = "display: none"        
         contenedorBotones.innerHTML = `
-        <button class ='btn btn-warning w-100 mt-3' onclick='editarAlquiler(${id})'>Aceptar</button>`;
+        <button class ='btn btn-warning w-100 mt-3' type='button' onclick='editarAlquiler(${id})'>Aceptar</button>`;
         
         selectCliente.value = res.data.ClienteId
         selectPelicula.value = res.data.PeliculaId
@@ -117,8 +124,17 @@ const getAlquileres = () => {
     .catch((e) => console.log(e));
 };
 
+const validarFormulario = () =>{
+
+}
+
 const agregarAlquiler = (e) =>{
-e.preventDefault()
+  
+  e.preventDefault()
+
+  if(selectCliente.value === '' || selectPelicula.value === '' || fechaAlquiler.value === '' || fechaDevolucion.value === '' || estado.value === '' || comentario.value === ''){
+    alert("Debe completar los campos")
+  }else{
     axios.post("http://localhost:3001/alquileres/",{      
       "ClienteId": selectCliente.value,
       "PeliculaId": selectPelicula.value,
@@ -129,6 +145,7 @@ e.preventDefault()
     })
     .then(res => console.log(res))
     .catch(e=>console.log(e))
+  }
 }
 
 getPeliculas();

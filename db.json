@@ -59,11 +59,10 @@
   ],
   "clientes": [
     {
-      "id": 1,
       "Nombre": "Diego Caceres",
-      "Edad": 30,
       "Email": "diego@gmail.com",
-      "Telefono": "381-123456"
+      "Telefono": "381-123456",
+      "id": 1
     },
     {
       "id": 2,
@@ -98,6 +97,18 @@
       "Email": "empleado@gmail.com",
       "Telefono": "4277262",
       "id": 6
+    },
+    {
+      "Nombre": "asd",
+      "Email": "asd@!asd",
+      "Telefono": "12",
+      "id": 7
+    },
+    {
+      "Nombre": "asd",
+      "Email": "asd@asd",
+      "Telefono": "1234567",
+      "id": 8
     }
   ],
   "peliculas": [
@@ -235,6 +246,15 @@
       "Estado": "En curso",
       "Comentarios": "Cliente regular, buen samaritano, merece el cielo",
       "id": 7
+    },
+    {
+      "ClienteId": "2",
+      "PeliculaId": "3",
+      "FechaAlquilado": "2023-11-09",
+      "FechaDevolucionEsperada": "2023-11-03",
+      "Estado": "En curso",
+      "Comentarios": "Cliente habitual",
+      "id": 8
     }
   ]
 }
