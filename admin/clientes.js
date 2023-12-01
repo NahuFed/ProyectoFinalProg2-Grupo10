@@ -61,8 +61,8 @@ const editarCliente = (id) => {
   else if(!emailInput.value.includes("@") || emailInput.value.length <3 || contarArrobas(emailInput.value)>1){
     alert("Ingrese un email con formato correcto \n Ejemplo: Juan@mail.com ")
   }
-  else if(isNaN(telefonoInput.value)){
-    alert("ingrese un numero telefonico valido")
+  else if(isNaN(telefonoInput.value) || telefonoInput.value.length<7 || telefonoInput.value.length >15 ){
+    alert("Ingrese un numero telefonico valido\nMinimo: 7 números\nMáximo: 15 números")
   }
   else {
     // Realiza una solicitud PUT a la URL del alquiler específico con el ID proporcionado
@@ -105,7 +105,7 @@ const agregarClientes = () => {
     alert("Ingrese un email con formato correcto \n Ejemplo: Juan@mail.com ")
   }
   else if(isNaN(telefonoInput.value) || telefonoInput.value.length<7 || telefonoInput.value.length >15 ){
-    alert("ingrese un numero telefonico valido\nMinimo: 7 caracteres\nMaximo: 15 caracteres")
+    alert("Ingrese un numero telefonico valido\nMinimo: 7 números\nMáximo: 15 números")
   } else {
     axios
       .post("http://localhost:3001/clientes/", {

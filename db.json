@@ -100,15 +100,9 @@
     },
     {
       "Nombre": "asd",
-      "Email": "asd@!asd",
-      "Telefono": "12",
+      "Email": "asd@asd.com",
+      "Telefono": "4277262",
       "id": 7
-    },
-    {
-      "Nombre": "asd",
-      "Email": "asd@asd",
-      "Telefono": "1234567",
-      "id": 8
     }
   ],
   "peliculas": [
@@ -185,76 +179,49 @@
   ],
   "alquileres": [
     {
-      "ClienteId": "1",
-      "PeliculaId": "1",
+      "Cliente": "Diego Caceres",
+      "Pelicula": "Troya",
       "FechaAlquilado": "2023-01-01",
       "FechaDevolucionEsperada": "2023-01-08",
-      "Estado": "En curso",
+      "Estado": "Devuelto",
       "Comentarios": "Cliente regular, sin observaciones",
       "id": 1
     },
     {
-      "id": 2,
-      "ClienteId": 2,
-      "PeliculaId": 2,
-      "FechaAlquilado": "2023-02-02",
-      "FechaDevolucionEsperada": "2023-02-09",
-      "Estado": "En curso",
-      "Comentarios": "Nuevo cliente, verificar dirección"
+      "Cliente": "Maria Martinez",
+      "Pelicula": "Guerra mundial Z",
+      "FechaAlquilado": "2023-09-02",
+      "FechaDevolucionEsperada": "2023-09-09",
+      "Estado": "Devuelto",
+      "Comentarios": "Nuevo Cliente",
+      "id": 2
     },
     {
-      "ClienteId": "3",
-      "PeliculaId": "3",
+      "Cliente": "Lucio Pagganni",
+      "Pelicula": "Rescatando al soldado Ryan",
       "FechaAlquilado": "2023-06-12",
       "FechaDevolucionEsperada": "2023-06-19",
-      "Estado": "En curso",
+      "Estado": "Devuelto",
       "Comentarios": "Cliente habitual, buen historial",
       "id": 3
     },
     {
-      "id": 4,
-      "ClienteId": 4,
-      "PeliculaId": 4,
-      "FechaAlquilado": "2023-03-15",
-      "FechaDevolucionEsperada": "2023-03-22",
-      "Estado": "En curso",
-      "Comentarios": "Cliente nuevo, solicitar identificación"
+      "Cliente": "Carlos Sanchez",
+      "Pelicula": "Interestelar",
+      "FechaAlquilado": "2023-09-22",
+      "FechaDevolucionEsperada": "2023-09-29",
+      "Estado": "Devuelto",
+      "Comentarios": "Cliente nuevo, solicitar identificación",
+      "id": 4
     },
     {
-      "id": 5,
-      "ClienteId": 5,
-      "PeliculaId": 5,
-      "FechaAlquilado": "2023-09-20",
-      "FechaDevolucionEsperada": "2023-09-27",
-      "Estado": "En curso",
-      "Comentarios": "Cliente preferencial, aplicar descuento"
-    },
-    {
-      "ClienteId": 1,
-      "PeliculaId": 1,
-      "FechaAlquilado": "2023-01-01",
-      "FechaDevolucionEsperada": "2023-01-08",
-      "Estado": "En curso",
-      "Comentarios": "Cliente regular, sin observaciones",
-      "id": 6
-    },
-    {
-      "ClienteId": "5",
-      "PeliculaId": "2",
-      "FechaAlquilado": "2023-10-31",
-      "FechaDevolucionEsperada": "2023-11-05",
-      "Estado": "En curso",
-      "Comentarios": "Cliente regular, buen samaritano, merece el cielo",
-      "id": 7
-    },
-    {
-      "ClienteId": "2",
-      "PeliculaId": "3",
-      "FechaAlquilado": "2023-11-09",
-      "FechaDevolucionEsperada": "2023-11-03",
-      "Estado": "En curso",
-      "Comentarios": "Cliente habitual",
-      "id": 8
+      "Cliente": "Nahuel",
+      "Pelicula": "La La Land",
+      "FechaAlquilado": "2023-10-01",
+      "FechaDevolucionEsperada": "2023-10-08",
+      "Estado": "Devuelto",
+      "Comentarios": "Cliente preferencial, aplicar descuento",
+      "id": 5
     }
   ]
 }

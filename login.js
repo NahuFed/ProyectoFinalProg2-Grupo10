@@ -15,7 +15,7 @@ const login = (e) => {
               }else if (resp.data.find((usuario) =>(usuario.Email === cuenta || usuario.Usuario === cuenta) && usuario.Password === password)){
                 alert("Usuario no autorizado")
               }else
-              alert("email o password incorrectos")        
+              alert("Email o password incorrectos")        
         }
         )
     .catch(e =>console.log(e))  
